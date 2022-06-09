@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Calculadora 1.0</title>
+<script>
+function add(n){
+  //implemente aqui para adicionar ao input valor os nÃºmeros clicados pelo usuÃ¡rio
+  console.log(n);
+}
+function resultado(){
+  document.getElementById("valor").value = eval(document.getElementById("valor").value);
+}
+</script>
+</head>
+<body>
+<input type="text" id="valor" /> <br>
+<button type="button" onclick="add('7')">7</button> 
+<button type="button" onclick="add('8')">8</button> 
+<button type="button" onclick="add('9')">9</button> 
+<button type="button" onclick="add('+')">+</button> <br>
+<button type="button" onclick="add('4')">4</button> 
+<button type="button" onclick="add('5')">5</button> 
+<button type="button" onclick="add('6')">6</button> 
+<button type="button" onclick="add('-')">-</button> <br>
+<button type="button" onclick="add('1')">1</button> 
+<button type="button" onclick="add('2')">2</button> 
+<button type="button" onclick="add('3')">3</button> 
+<button type="button" onclick="add('*')">*</button> <br>
+<button type="button" onclick="add('0')">0</button> 
+<button type="button" onclick="add('/')">/</button> 
+<button type="button" onclick="resultado()">=</button> 
+</body>
+</html>
